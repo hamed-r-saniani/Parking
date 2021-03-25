@@ -102,6 +102,7 @@ namespace Parking
                 else if (choose == 3)
                 {
                     manager.GetTotal();
+                    manager.res = 0;
                 }
                 else if (choose == 4)
                 {

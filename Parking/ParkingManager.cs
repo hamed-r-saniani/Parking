@@ -24,7 +24,7 @@ namespace Parking
         //}
         List<list> vehicles = new List<list>();
         List<int> total = new List<int>();
-        int res = 0;
+         public int res = 0;
         public int result = 0;
 
 
