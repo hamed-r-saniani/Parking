@@ -25,6 +25,7 @@ namespace Parking
         List<list> vehicles = new List<list>();
         List<int> total = new List<int>();
         int res = 0;
+        public int result = 0;
 
 
         public bool AddVehicle(object o)
@@ -79,6 +80,7 @@ namespace Parking
                         Comment(comment);
                         total.Add(car.GetCost());
                         vehicles.RemoveAt(i);
+                        result = 1;
                     }
                     else if (vehicles[i].Type=="Bike")
                     {
@@ -95,6 +97,7 @@ namespace Parking
                         Comment(comment);
                         total.Add(bike.GetCost());
                         vehicles.RemoveAt(i);
+                        result = 1;
                     }
                     
                 }

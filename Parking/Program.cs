@@ -89,6 +89,11 @@ namespace Parking
                         }
 
                         manager.RemoveVehicle(id, exit);
+                        if (manager.result == 0)
+                        {
+                            Console.WriteLine("Your ID Not Found :(");
+                        }
+                        manager.result = 0;
                         Console.Write("Do yo Want Continue? Y/N : ");
                         remove = char.Parse(Console.ReadLine().ToUpper());
                     }
